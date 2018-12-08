@@ -71,3 +71,23 @@ Please cite the paper in your publications if it helps your research:
       year = {2017}
       }
 	  
+## Issues
+1 Install Visual C++ 2015
+https://go.microsoft.com/fwlink/?LinkId=691126
+
+2 Install pycocotools
+pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+
+3 copy pose_model.pth to ./network/weight/pose_model.pth
+
+4 UserWarning: 
+This call to matplotlib.use() has no effect because the backend has already
+been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
+or matplotlib.backends is imported for the first time.
+
+Solution: 
+delete: import pylab as plt
+
+
+
+
